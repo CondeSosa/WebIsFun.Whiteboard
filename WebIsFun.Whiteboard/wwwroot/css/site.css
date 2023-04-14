@@ -1,0 +1,119 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+   
+}
+
+.canvasContainer {
+  height: calc(100vh - 4.4rem);
+}
+
+#canvas {
+    cursor: none;
+}
+
+.drawingOptionsContainer{
+    z-index:9000;
+    top:1rem;
+    left:2rem;
+    height:2.5rem;
+    width:20rem;
+    position: absolute;
+    border:none;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow:1px 2px 5px #8888;
+}
+
+.downloadCanvasBtn {
+    z-index: 9000;
+    bottom: 5rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 7px;
+    box-shadow: 1px 2px 5px #8888;
+    transition:height 0.2s, width 0.2s;
+}
+
+    .downloadCanvasBtn:hover {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+    .optionsBtn{
+        
+        border:none;
+        background-color:transparent;
+       
+    }
+        .optionsBtn img 
+        {
+            height:25px;
+            width:25px;
+            margin-bottom:-15px;
+            transition:margin-bottom 0.2s;
+        }
+        .optionsBtn:hover img {
+            margin-bottom: 5px;
+        }
+
+
+
+#cursor {
+    position: absolute;
+    pointer-events: none;
+}
+
+.colorBlack {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translate(-2px,-2px);
+}
+
+.colorRed {
+    background-color: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translate(-2px,-2px);
+}
+.colorWhite {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius:2px;
+     transform: translate(-8px,-8px);
+}
+
+.colorHighlighter {
+    background-color: rgba(255, 195, 0,0.2);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid gray;
+    transform: translate(-10px,-11px);
+}

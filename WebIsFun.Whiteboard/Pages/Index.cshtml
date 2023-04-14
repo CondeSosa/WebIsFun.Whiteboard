@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Witeboard";
+}
+
+
+<div id="cursor" class="colorBlack"></div>
+
+<div class="drawingOptionsContainer row">
+
+    <div class="col ">
+        <button class="optionsBtn" onclick="SetColorBlack()">
+            <img  src="img/darkpencil.png" />
+      </button>
+    </div>
+    <div class="col">
+        <button class="optionsBtn " onclick="SetColorRed()">
+            <img src="img/redpencil.png" />
+        </button>
+    </div>
+    <div class="col">
+        <button class="optionsBtn " onclick="SetHigligther()">
+            <img src="img/highlighter.png" />
+        </button>
+    </div>
+    <div class="col ">
+        <button class="optionsBtn " onclick="SetEraser()">
+            <img src="img/eraser.png" />
+        </button>
+    </div>
+   
+</div>
+
+
+
+<button id="download" class="downloadCanvasBtn" onclick="downloadCanvas()">
+    <i class="bi bi-download"></i>
+</button>
+<canvas id="canvas"></canvas>
